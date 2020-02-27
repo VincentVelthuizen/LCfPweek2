@@ -13,5 +13,5 @@ biking_time = (travel_distance / biking_speed) * 60 + biking_extra_time     # mi
 driving_time = (travel_distance / driving_speed) * 60 + biking_extra_time   # minutes
 
 print("Walking", int(walking_time // 60), "hours and", int(walking_time % 60), "minutes")
-print("Biking", biking_time)
-print("Driving", driving_time)
+print("Biking", int(biking_time // 60), "hours and", int(biking_time % 60), "minutes")
+print("Driving", int(driving_time // 60), "hours and", int(driving_time % 60), "minutes")
